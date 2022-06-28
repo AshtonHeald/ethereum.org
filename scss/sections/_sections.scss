@@ -1,0 +1,182 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+// ========================
+#welcome {
+	img {
+		min-height: 380px;
+		max-height: 440px;
+		object-fit: cover;
+		margin-top: 76px;
+	}
+}
+.max-width-55 {
+	max-width: 55ch;
+	font-size: 1.25rem;
+	color: $gray-600;
+	padding: 0 2rem;
+}
+// ========================
+#get-started {
+	@include bgGrey;
+}
+
+// ========================
+#what-is {
+	@include bgLightBlue;
+}
+// ========================
+#defi {
+	@include bgOrange;
+}
+// ========================
+#more-nfts {
+	@include bgBabyBlue;
+}
+#more-nfts.pb-5 {
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 0 !important;
+	}
+}
+// =======================
+#open-internet {
+	@include bgPink;
+}
+// ====================
+#developer-portal {
+	@include bgLavender;
+	.container-fluid {
+		@include media-breakpoint-up(md) {
+			margin-bottom: 2rem;
+		}
+	}
+	.card {
+		@include media-breakpoint-up(lg) {
+			margin-left: 2.5rem;
+		}
+	}
+}
+
+// =======================
+#contribute {
+	.card-alt {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		@include media-breakpoint-up(lg) {
+			padding: 2rem;
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+	}
+
+	p {
+		font-size: 1.25rem;
+		color: $gray-600;
+	}
+	img {
+		margin-top: -6rem;
+		margin-left: -0.33%;
+		@include media-breakpoint-up(md) {
+			margin-top: -3rem;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: -2rem;
+			margin-bottom: -2rem;
+			padding: 1rem;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-top: -6rem;
+			margin-bottom: -6rem;
+			padding: 2rem;
+		}
+	}
+	a.btn-outline-dark {
+		padding-left: 2.5rem;
+		padding-right: 2rem;
+		position: relative;
+		i {
+			position: absolute;
+			left: 10px;
+			margin-top: -6px;
+			font-size: 1.5rem;
+		}
+
+		&:after {
+			margin: 0 0.5rem;
+			display: inline;
+			content: "↗";
+			transition: all 0.1s ease-in-out 0s;
+			font-style: normal;
+			position: absolute;
+		}
+		&:hover {
+			&:after {
+				transform: translate(0.15em, -0.2em) !important;
+			}
+		}
+	}
+}
+//=====================
+#explore-ethereum {
+	.row {
+		a {
+			flex: 1 1 389px;
+		}
+	}
+}
+// ====================
+footer {
+	font-size: 0.875rem;
+	.row {
+		justify-content: space-between;
+		&:first-of-type {
+			span {
+				color: $gray-400;
+			}
+			a {
+				color: $gray-300;
+				font-size: 2rem;
+			}
+		}
+		&:nth-of-type(2) {
+			h5 {
+				font-size: 0.875rem;
+				font-weight: bold;
+			}
+			a {
+				color: $gray-400;
+				padding: 0.5rem;
+				&:hover {
+					color: $primary;
+					.fa-square-question {
+						transform: scale(1.2);
+					}
+				}
+			}
+			.arrow::after {
+				margin-left: 0.125em;
+				margin-right: 0.3em;
+				display: inline;
+				content: "↗";
+				transition: all 0.1s ease-in-out 0s;
+				font-style: normal;
+			}
+			grid-template-columns: repeat(1, auto);
+			display: grid;
+			@include media-breakpoint-up(sm) {
+				grid-template-columns: repeat(2, auto);
+			}
+			@include media-breakpoint-up(md) {
+				grid-template-columns: repeat(3, auto);
+			}
+			@include media-breakpoint-up(lg) {
+				grid-template-columns: repeat(4, auto);
+			}
+			@include media-breakpoint-up(xl) {
+				grid-template-columns: repeat(6, auto);
+			}
+		}
+		> div {
+			width: auto;
+		}
+	}
+}

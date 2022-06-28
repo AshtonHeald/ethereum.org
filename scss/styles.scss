@@ -1,0 +1,10 @@
+@use "custom";
+// import components
+@use "components/mixins";
+@use "components/typography";
+@use "components/buttons";
+@use "components/cards";
+// import sections
+@use "global";
+@use "sections/navigation";
+@use "sections/sections";

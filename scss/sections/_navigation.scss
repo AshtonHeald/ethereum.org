@@ -1,0 +1,127 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+nav {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	height: 76px;
+	.navbar-brand {
+		opacity: 0.85;
+		svg {
+			width: 22px;
+			height: auto;
+		}
+		&:hover {
+			opacity: 1;
+			transition: transform 0.1s ease 0s;
+			transform: scale(1.2);
+		}
+	}
+	.offcanvas-start {
+		@include media-breakpoint-up(lg) {
+			width: auto;
+		}
+		ul {
+			.nav-link {
+				color: $black !important;
+				align-items: center;
+				padding: 0.25rem 0.75rem !important;
+				@include media-breakpoint-up(lg) {
+					display: flex !important;
+				}
+				&:hover {
+					color: $primary !important;
+				}
+			}
+			.dropdown-toggle {
+				&:after {
+					background-image: $dropdown-button-icon;
+					width: $dropdown-icon-width;
+					height: $dropdown-icon-height;
+					border: none;
+					margin-left: 0;
+				}
+				&:hover {
+					&:after {
+						background-image: $dropdown-button-hover;
+					}
+				}
+			}
+			.dropdown-toggle.show {
+				&:after {
+					transform: rotate(180deg);
+				}
+			}
+			.dropdown-item {
+				&:hover {
+					color: $primary !important;
+				}
+			}
+		}
+	}
+	.mobile-nav-group,
+	#searchOffcanvasLg {
+		@include media-breakpoint-up(lg) {
+			display: none !important;
+		}
+	}
+	#searchOffcanvasLg {
+		button {
+			font-size: 1.5rem;
+		}
+	}
+	.nav-group {
+		button {
+			padding: 0 0.5rem;
+			min-width: 40px;
+			i {
+				transform: scaleX(-1);
+				font-size: 1.2rem;
+			}
+			&:hover {
+				color: $primary;
+			}
+		}
+		a {
+			i {
+				font-size: 1.2rem;
+				margin: 0 0.5rem;
+			}
+			&:hover {
+				i {
+					transform: scale(1.2);
+				}
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			display: flex !important;
+			form {
+				position: relative;
+				p {
+					border: 1px solid $gray-400;
+					border-radius: 0.25em;
+					position: absolute;
+					right: 15px;
+					top: 45%;
+					margin-top: -11px;
+					margin-bottom: 0 !important;
+					font-size: 0.875rem;
+					color: $black;
+					padding: 0 5px;
+				}
+				i {
+					position: absolute;
+					left: 18px;
+					top: 50%;
+					margin-top: -11px;
+					color: $gray-300;
+				}
+			}
+		}
+	}
+	button {
+		.navbar-toggler-icon {
+			width: 1.5rem !important;
+			height: 1.5rem !important;
+		}
+	}
+}

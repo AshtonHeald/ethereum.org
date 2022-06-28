@@ -1,0 +1,105 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.card {
+	border-radius: 0;
+	box-shadow: $boxShadow;
+	border-color: $black;
+}
+
+#get-started .card,
+#explore-ethereum .card {
+	.card-body {
+		min-height: 125px;
+		p {
+			color: $gray-600;
+			font-size: 1rem;
+		}
+	}
+	&:hover {
+		transition: transform 0.1s ease 0s;
+		transform: scale(1.02);
+		box-shadow: $hoverShadow;
+		border-radius: 0.25rem;
+		background: $gray-100;
+		color: $black;
+		.card-body {
+			p {
+				color: $black;
+			}
+		}
+	}
+}
+
+.card {
+	.card-img-top {
+		@include gradient;
+		img {
+			object-fit: cover;
+			width: 320px;
+			height: 229px;
+		}
+	}
+}
+
+.card-title {
+	margin-bottom: 0;
+}
+
+.card-alt {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	@include gradientAlt;
+	background-clip: border-box;
+	border-radius: 0.25rem;
+	@include media-breakpoint-up(lg) {
+		flex-direction: row;
+	}
+}
+#developer-portal .card {
+	box-shadow: $boxShadow;
+}
+.list-group-item {
+	padding: 1rem;
+	p {
+		color: $gray-400;
+		font-size: 0.875rem;
+		margin: 0;
+	}
+	&:hover {
+		background-color: $purple;
+		cursor: pointer;
+		p {
+			color: $black;
+		}
+	}
+}
+.card-header {
+	padding: 1rem;
+	border-color: $black;
+}
+
+.dots {
+	@include media-breakpoint-up(sm) {
+		display: flex !important;
+	}
+	.dot {
+		width: 12px;
+		height: 12px;
+		border-radius: 64px;
+		&:first-of-type {
+			background-color: $danger;
+			margin-right: 0.5rem;
+		}
+		&:nth-of-type(2) {
+			background-color: $warning;
+			margin-right: 0.5rem;
+		}
+		&:nth-of-type(3) {
+			background-color: $success;
+		}
+	}
+}

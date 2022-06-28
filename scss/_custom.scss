@@ -1,0 +1,129 @@
+// My Theme Colors
+// Ethereum
+$lightBlue: rgb(204, 252, 255);
+$orange: rgb(255, 227, 211);
+$babyBlue: rgb(225, 254, 250);
+$pink: rgb(255, 229, 249);
+$lavender: rgb(232, 232, 255);
+$purple: rgb(209, 209, 255);
+// Main
+$deepBlue: rgb(28, 28, 255);
+$deepBlueHover: rgba(28, 28, 225, 0.8);
+//-----
+$white: #fff !default;
+$gray-100: rgb(252, 252, 252) !default;
+$gray-200: rgb(229, 229, 229) !default;
+$gray-300: rgb(178, 178, 178) !default;
+$gray-400: rgb(102, 102, 102) !default;
+$black: rgb(51, 51, 51) !default;
+//-----
+$boxShadow: rgb(210, 210, 249) 4px 4px 0px 0px;
+$hoverShadow: rgba(0, 0, 0, 0.15) 0px 8px 17px;
+// Defaults
+$primary: $deepBlue;
+$border-color: $black !default;
+// Breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 500px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1360px,
+	xxl: 1504px,
+) !default;
+
+// menuoveride
+$navbar-dark-color: rgba($white, 0.55) !default;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 40'><path stroke='#{$navbar-dark-color}' d='M 2 13 l 10 0 l 0 0 l 10 0 M 4 19 l 8 0 M 12 19 l 8 0 M 2 25 l 10 0 l 0 0 l 10 0'/></svg>") !default;
+
+$navbar-light-color: $black !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 40'><path stroke='#{$navbar-light-color}' stroke-width='2' d='M 2 13 l 10 0 l 0 0 l 10 0 M 4 19 l 8 0 M 12 19 l 8 0 M 2 25 l 10 0 l 0 0 l 10 0'/></svg>") !default;
+
+// dropdown overrides
+$dropdown-icon-color: $gray-300;
+$dropdown-icon-hover: $primary;
+
+$dropdown-icon-width: 1.5rem !default;
+$dropdown-icon-height: 1.5rem !default;
+
+$dropdown-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$dropdown-icon-color}'><path fill-rule='evenodd' d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>") !default;
+$dropdown-button-hover: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$dropdown-icon-hover}'><path fill-rule='evenodd' d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>") !default;
+
+// Import Bootstrap 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+.bg-light {
+	background-color: $white !important;
+}
+.container-xxl {
+	max-width: 1504px;
+}
+.p-4 {
+	@include media-breakpoint-down(md) {
+		padding: 0 !important;
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 4rem !important;
+	}
+	@include media-breakpoint-up(xl) {
+		padding: 6rem !important;
+	}
+}
+.p-3 {
+	@include media-breakpoint-up(md) {
+		padding: 1.5rem !important;
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 0rem !important;
+		padding-left: 3rem !important;
+	}
+	@include media-breakpoint-up(xl) {
+		padding-left: 4rem !important;
+	}
+}
+.row {
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+}
+.navbar-toggler {
+	border: none;
+	z-index: 1046;
+	&:focus {
+		box-shadow: $primary;
+	}
+}
+.form-control {
+	padding: 0.5rem 2rem;
+	color: $gray-300;
+}
+.offcanvas-backdrop {
+	opacity: 1 !important;
+	background-color: rgba($gray-300, 0.9);
+}
+
+.nav-link {
+	color: $black;
+	padding: 0.25rem;
+	display: inline-block;
+	&:hover {
+		color: $primary;
+	}
+}
+.d-grid {
+	place-items: center;
+}
+.w-100.w-70 {
+	@include media-breakpoint-up(md) {
+		width: 70% !important;
+	}
+	@include media-breakpoint-up(lg) {
+		width: 100% !important;
+	}
+}
+.gap-4 {
+	@include media-breakpoint-up(lg) {
+		gap: 0 !important;
+		.card {
+			margin: 1rem;
+		}
+	}
+}

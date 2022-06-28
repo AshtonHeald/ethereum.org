@@ -1,0 +1,21 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.btn {
+	padding: 0.5rem 0.75rem;
+}
+.btn-outline-dark:hover {
+	color: $primary;
+	border-color: $primary;
+	background-color: inherit;
+	box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
+}
+.btn-outline-dark:active {
+	color: $black;
+	background-color: $gray-200;
+}
+.btn-primary:hover {
+	box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
+	background-color: $deepBlueHover;
+	border-color: $blue-400;
+}

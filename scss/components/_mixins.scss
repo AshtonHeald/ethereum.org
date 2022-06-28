@@ -1,0 +1,48 @@
+@use "../custom" as *;
+@mixin bgLightBlue {
+	background: $lightBlue none repeat scroll 0% 0%;
+}
+@mixin bgOrange {
+	background: $orange none repeat scroll 0% 0%;
+}
+@mixin bgBabyBlue {
+	background: $babyBlue none repeat scroll 0% 0%;
+}
+@mixin bgPink {
+	background: $pink none repeat scroll 0% 0%;
+}
+@mixin bgLavender {
+	background: $lavender none repeat scroll 0% 0%;
+}
+@mixin bgPurple {
+	background: $purple none repeat scroll 0% 0%;
+}
+@mixin bgGrey {
+	background: $gray-100 none repeat scroll 0% 0%;
+}
+
+// Shadow
+@mixin boxShadow {
+	box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
+}
+// Gradient
+@mixin gradient {
+	background: rgba(0, 0, 0, 0)
+		radial-gradient(
+			46.28% 66.31% at 66.95% 58.35%,
+			rgb(230, 230, 247) 0%,
+			rgb(231, 237, 250) 50%,
+			rgb(233, 251, 250) 100%
+		)
+		repeat scroll 0% 0%;
+}
+@mixin gradientAlt {
+	background: rgba(0, 0, 0, 0)
+		linear-gradient(
+			85.12deg,
+			rgba(185, 185, 241, 0.2) 0%,
+			rgba(84, 132, 234, 0.2) 56.29%,
+			rgba(58, 142, 137, 0.2) 99.99%
+		)
+		repeat scroll 0% 0%;
+}

@@ -1,0 +1,24 @@
+@use "custom" as *;
+@use "components/mixins" as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-padding, 75px);
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+	&:hover {
+		color: $primary;
+	}
+}
+p {
+	//line-height: 140%;
+}

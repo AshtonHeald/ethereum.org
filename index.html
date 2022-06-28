@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon-32x32.png" type="image/png">
+	<title>Home | ethereum.org</title>
+	<link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="container-xxl p-0">
+	<!-- Navigation -->
+	<nav class="container-xxl navbar navbar-expand-lg fixed-top navbar-light bg-light px-3 py-3">
+		<div class="container-fluid">
+			<a class="navbar-brand py-0 px-1" href="#">
+				<svg alt="Ethereum logo" class="Nav__HomeLogo-sc-1aprtmp-10 bxCcTx" width="115" height="182"
+					viewBox="0 0 115 182" fill="none">
+					<path d="M57.5054 181V135.84L1.64064 103.171L57.5054 181Z" fill="#F0CDC2" stroke="#1616B4"
+						stroke-linejoin="round">
+					</path>
+					<path d="M57.6906 181V135.84L113.555 103.171L57.6906 181Z" fill="#C9B3F5" stroke="#1616B4"
+						stroke-linejoin="round">
+					</path>
+					<path d="M57.5055 124.615V66.9786L1 92.2811L57.5055 124.615Z" fill="#88AAF1" stroke="#1616B4"
+						stroke-linejoin="round"></path>
+					<path d="M57.6903 124.615V66.9786L114.196 92.2811L57.6903 124.615Z" fill="#C9B3F5" stroke="#1616B4"
+						stroke-linejoin="round"></path>
+					<path d="M1.00006 92.2811L57.5054 1V66.9786L1.00006 92.2811Z" fill="#F0CDC2" stroke="#1616B4"
+						stroke-linejoin="round"></path>
+					<path d="M114.196 92.2811L57.6906 1V66.9786L114.196 92.2811Z" fill="#B8FAF6" stroke="#1616B4"
+						stroke-linejoin="round"></path>
+				</svg>
+			</a>
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
+				aria-labelledby="navbarOffcanvasLgLabel">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle px-2 d-none" data-bs-toggle="dropdown" href="#" role="button"
+							aria-expanded="false">Use Ethereum</a>
+						<ul class="dropdown-menu position-absolute mobile-show">
+							<li><a class="dropdown-item p-2" href="#">Ethereum wallets</a></li>
+							<li><a class="dropdown-item p-2" href="#">Get ETH</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized applications (dapps)</a></li>
+							<li><a class="dropdown-item p-2" href="#">Layer 2</a></li>
+							<li><a class="dropdown-item p-2" href="#">Non-fungible tokens (NFTs)</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized finance (DeFi)</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized autonomous organizations (DAOs)</a>
+							</li>
+							<li><a class="dropdown-item p-2" href="#">Stablecoins</a></li>
+							<li><a class="dropdown-item p-2" href="#">Stake ETH</a></li>
+							<li><a class="dropdown-item p-2" href="#">Run a node</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized social networks</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized identity</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle px-2 d-none" data-bs-toggle="dropdown" href="#" role="button"
+							aria-expanded="false">Learn</a>
+						<ul class="dropdown-menu position-absolute mobile-show">
+							<li><a class="dropdown-item p-2" href="#">What is Ethereum</a></li>
+							<li><a class="dropdown-item p-2" href="#">What is ether (ETH)?</a></li>
+							<li><a class="dropdown-item p-2" href="#">Smart contracts</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum security and scam prevention</a></li>
+							<li><a class="dropdown-item p-2" href="#">History of Ethereum</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum Whitepaper</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum upgrades</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum glossary</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum governance</a></li>
+							<li><a class="dropdown-item p-2" href="#">Blockchain bridges</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum energy consumption</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum Improvment Proposals</a></li>
+							<li><a class="dropdown-item p-2" href="#">What is Web3?</a></li>
+							<li><a class="dropdown-item p-2" href="#">Community guides and resources</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle px-2 d-none" data-bs-toggle="dropdown" href="#" role="button"
+							aria-expanded="false">Developers</a>
+						<ul class="dropdown-menu position-absolute mobile-show">
+							<li><a class="dropdown-item p-2" href="#">Developers' home</a></li>
+							<li><a class="dropdown-item p-2" href="#">Documentation</a></li>
+							<li><a class="dropdown-item p-2" href="#">Tutorials</a></li>
+							<li><a class="dropdown-item p-2" href="#">Learn by coding</a></li>
+							<li><a class="dropdown-item p-2" href="#">Set up local enviroment</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle px-2 d-none" data-bs-toggle="dropdown" href="#" role="button"
+							aria-expanded="false">Enterprise</a>
+						<ul class="dropdown-menu position-absolute mobile-show">
+							<li><a class="dropdown-item p-2" href="#">Mainnet Ethereum</a></li>
+							<li><a class="dropdown-item p-2" href="#">Private Ethereum</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle px-2 d-none" data-bs-toggle="dropdown" href="#" role="button"
+							aria-expanded="false">Community</a>
+						<ul class="dropdown-menu position-absolute mobile-show">
+							<li><a class="dropdown-item p-2" href="#">Community Hub</a></li>
+							<li><a class="dropdown-item p-2" href="#">Online communities</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum events</a></li>
+							<li><a class="dropdown-item p-2" href="#">Get involved</a></li>
+							<li><a class="dropdown-item p-2" href="#">Open research</a></li>
+							<li><a class="dropdown-item p-2" href="#">Grants</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum Support</a></li>
+							<li><a class="dropdown-item p-2" href="#">Language resources</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="d-none justify-content-end nav-group">
+				<form class="px-2" action="">
+					<input type="search" placeholder="Search" class="form-control" aria-label="Sizing example input"
+						aria-describedby="inputGroup-sizing-default">
+					<p>/</p>
+					<i class="fa-regular fa-magnifying-glass"></i>
+				</form>
+				<button class="btn"><i class="fa-solid fa-moon"></i></button>
+				<a class="d-flex align-items-center" href="#">
+					<i class="fa-light fa-globe"></i>
+					Languages</a>
+			</div>
+			<div class="d-flex justify-content-end mobile-nav-group">
+				<button class="btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvasLg"
+					aria-controls="searchOffcanvasLg">
+					<i class="fa-regular fa-magnifying-glass"></i>
+				</button>
+				<button class="navbar-toggler px-1" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="offcanvas offcanvas-start" tabindex="-2" id="searchOffcanvasLg"
+				aria-labelledby="searchOffcanvasLgLabel">
+				<div class="d-flex px-3 justify-content-between align-items-center">
+					<h3>Search</h3>
+					<button class="btn" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvasLg"
+						aria-controls="searchOffcanvasLg"><i class="fa-solid fa-xmark"></i>
+					</button>
+				</div>
+				<div>
+					<form class="" action="">
+						<input type="search" placeholder="Search" class="form-control" aria-label="Sizing example input"
+							aria-describedby="inputGroup-sizing-default">
+						<i class="fa-regular fa-magnifying-glass"></i>
+					</form>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Header -->
+	<section id="welcome">
+		<img class="w-100" src="img/hero.png" alt="hero">
+		<div class="d-grid justify-content-center text-center pt-4 pb-5">
+			<div class="mt-2 mb-3">
+				<a href="#">イーサリアム</a>
+			</div>
+			<h1 class="h1">Welcome to Ethereum</h1>
+			<p class="max-width-55 mt-3 mb-4">Ethereum is the community-run technology powering the cryptocurrency
+				ether (ETH) and thousands of decentralized applications.</p>
+			<div>
+				<a role="button" class="btn btn-outline-dark">Explore Ethereum</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- Getting Started -->
+	<section id="get-started">
+		<div class="container-fluid">
+			<div class="row flex-md-row-reverse py-3">
+				<div class="col-md-6">
+					<img class="w-100" src="img/hackathon_transparent.png" alt="hackathon">
+				</div>
+				<div class="col-md-6 d-flex align-items-center">
+					<div class="p-4">
+						<h2 class="h2 mb-3">Get Started</h2>
+						<p>ethereum.org is your portal into the world of Ethereum. The tech is new and ever-evolving –
+							it
+							helps to have a guide. Here's what we recommend you do if you want to dive in.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Cards -->
+			<div class="row pb-5 gap-4">
+				<div class="col-lg-6">
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/wallet-cropped.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">Pick a wallet</h3>
+							<p class="card-text">A wallet lets you connect to Ethereum and manage your funds</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/eth.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">Get eth</h3>
+							<p class="card-text">Eth is the currency of Ethereum - you can use it in applications.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/doge-computer.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">Use a dapp</h3>
+							<p class="card-text">Dapps are applications powered by Ethereum. See what you can do.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/developers-eth-blocks.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">Start building</h3>
+							<p class="card-text">If you want ot start coding with Ethereum, we have documentation,
+								tutorials, and more in our developer portal.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- What is Ethereum-->
+	<section id="what-is" class="border-top border-bottom py-5">
+		<div class="container-fluid">
+			<div class="row flex-md-row">
+				<div class="col-lg-6 d-grid">
+					<img class="w-100 w-70" src="img/what-is-ethereum.png" alt="">
+				</div>
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="p-4">
+						<h2 class="h2 mb-3">What is Ethereum?</h2>
+						<p class="mb-4">Ethereum is a technology that's home to digital money, global payments, and
+							applications.
+							The community has built a
+							booming digital economy, bold new ways for creators to earn online, and so much more.
+							It's open to everyone, wherever
+							you are in the world – all you need is the internet.</p>
+						<div class="d-flex flex-wrap gap-3">
+							<a href="#" class="btn btn-primary">What is Ethereum?</a>
+							<a href="#" class="btn btn-outline-dark">More on digital money</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Explore Defi -->
+	<section id="defi">
+		<div class="container-fluid">
+			<div class="row flex-md-row-reverse pt-5 pb-5">
+				<div class="col-lg-6 d-grid">
+					<img class="w-100 w-70" src="img/impact_transparent.webp" alt="">
+				</div>
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="p-4">
+						<h2 class="h2 mb-3">A fairer financial system</h2>
+						<p class="mb-4">Today, billions of people can’t open bank accounts, others have their payments
+							blocked. Ethereum's decentralized finance
+							(DeFi) system never sleeps or discriminates. With just an internet connection, you can send,
+							receive, borrow, earn
+							interest, and even stream funds anywhere in the world.</p>
+						<div class="d-flex flex-wrap gap-3">
+							<a href="#" class="btn btn-primary">Explore DeFi</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- More on NFTs -->
+	<section id="more-nfts" class="border-top border-bottom pb-5">
+		<div class="container-fluid">
+			<div class="row flex-md-row">
+				<div class="col-lg-6 d-grid">
+					<img class="w-100 w-70" src="img/infrastructure_transparent.webp" alt="">
+				</div>
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="p-4">
+						<h2 class="h2 mb-3">The internet of assets</h2>
+						<p class="mb-4">Ethereum isn't just for digital money. Anything you can own can be represented,
+							traded and put to use as non-fungible
+							tokens (NFTs). You can tokenise your art and get royalties automatically every time it's
+							re-sold. Or use a token for
+							something you own to take out a loan. The possibilities are growing all the time.</p>
+						<div class="d-flex flex-wrap gap-3">
+							<a href="#" class="btn btn-primary">More on NFTs</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Open Internet -->
+	<section id="open-internet" class="pb-5">
+		<div class="container-fluid">
+			<div class="row flex-md-row-reverse">
+				<div class="col-lg-6 d-grid">
+					<img class="w-100 w-70" src="img/future_transparent.png" alt="">
+				</div>
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="p-4">
+						<h2 class="h2 mb-3">An open internet</h2>
+						<p class="mb-4">Today, we gain access to 'free' internet services by giving up control of our
+							personal data. Ethereum services are open
+							by default – you just need a wallet. These are free and easy to set up, controlled by you,
+							and work without any personal
+							info.</p>
+						<div class="d-flex flex-wrap gap-3">
+							<a href="#" class="btn btn-primary">Explore the open internet</a>
+							<a href="#" class="btn btn-outline-dark">More on wallets</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Developer Portal -->
+	<section id="developer-portal" class="border-top border-bottom py-5">
+		<div class="container-fluid">
+			<div class="row flex-md-row-reverse">
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="p-4">
+						<h2 class="h2 mb-3">A new frontier for development</h2>
+						<p class="mb-4">Ethereum and its apps are transparent and open source. You can fork code and
+							re-use functionality others have already
+							built. If you don't want to learn a new language you can just interact with open-sourced
+							code using JavaScript and other
+							existing languages.</p>
+						<div class="d-flex flex-wrap gap-3">
+							<a href="#" class="btn btn-primary">Developer Portal</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card mt-4">
+						<div class="card-header d-flex justify-content-between align-items-center">
+							<div class="dots d-none">
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+							</div>
+							<h3 class="card-title h6">Code Examples</h3>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+								class="Icon__StyledIcon-sc-c716af-0 TitleCardList__StyledIcon-sc-10oh3h-2 bwtnbK dZTyOm"
+								height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+									d="M160 368L32 256l128-112m192 224l128-112-128-112"></path>
+							</svg>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h4 class="h6">Your own bank</h4>
+								<p>You can build a bank run by logic you've programmed.</p>
+							</li>
+							<li class="list-group-item">
+								<h4 class="h6">Your own currency</h4>
+								<p>You can create tokens that you can transfer and use across applications.</p>
+							</li>
+							<li class="list-group-item">
+								<h4 class="h6">A JavaScript Ethereum wallet</h4>
+								<p>You can use existing languages to interact with Ethereum and other applications.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<h4 class="h6">An open, permissionless DNS</h4>
+								<p>You can reimagine existing services as decentralized, open applications.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Ethereum Today -->
+	<!-- === Graphs require api & external library -->
+	<!-- Explore Ethereum -->
+	<section id="explore-ethereum">
+		<div class="container-fluid py-5">
+			<div class="row">
+				<h2 class="h2 mb-4">Explore ethereum.org</h2>
+				<!-- Cards -->
+				<div class="d-flex flex-wrap gap-4">
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/merge.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">Level up your upgrade knowlegde</h3>
+							<p class="card-text">The Ethereum roadmap consists of interconnected upgrades designed to
+								make
+								the network more scalable, secure, and
+								sustainable.</p>
+						</div>
+					</a>
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/infrastructure_transparent.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">Ethereum for enterprise</h3>
+							<p class="card-text">See how Ethereum can open up new business models, reduce your costs and
+								future-proof your business.</p>
+						</div>
+					</a>
+					<a href="" class="card">
+						<div class="card-img-top d-flex justify-content-center">
+							<img src="img/enterprise-eth.png" class="mt-4" alt="...">
+						</div>
+						<div class="card-body">
+							<h3 class="h3">The Ethereum community</h3>
+							<p class="card-text">Ethereum is all about community. It's made up of people from all
+								different
+								backgrounds and interests. See how you can
+								join in.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+	</section>
+	<!-- Contribute -->
+	<section id="contribute" class="py-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="card-alt flex-lg-row-reverse my-4">
+					<div class="col-lg-6 d-grid">
+						<img class="w-100 w-70" src="img/finance_transparent.webp" alt="">
+					</div>
+					<div class="col-lg-6 d-flex align-items-center">
+						<div class="p-3">
+							<h2 class="h2 mb-3">Contribute to ethereum.org</h2>
+							<p class="mb-4">This website is open source with hundreds of community contributors. You can
+								propose edits to any of the content on this
+								site, suggest awesome new features, or help us squash bugs.</p>
+							<div class="d-flex flex-wrap gap-3">
+								<a href="#" class="btn btn-primary">More on contributing</a>
+								<a href="#" class="btn btn-outline-dark">
+									<i class="fa-brands fa-github"></i>
+									Github
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<span>Website last updated: June 24, 2022</span>
+				</div>
+				<div class="col-md-6">
+					<div class="d-flex my-3 gap-2">
+						<a href="" class="mx-1">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="" class="mx-1">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="" class="mx-1">
+							<i class="fa-brands fa-youtube"></i>
+						</a>
+						<a href="" class="mx-1">
+							<i class="fa-brands fa-discord"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row flex-md-wrap mb-5">
+				<div>
+					<h5 class="mt-5">Use Ethereum</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum wallets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Get ETH</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Decentralize applications (dapps)</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Layer 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Run a node</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Stablecoins</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Stake ETH</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="mt-5">Learn</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">What is Ethereum?</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">What is ether (ETH)?</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Community guides and resources</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">History of Ethereum</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum Whitepaper</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum upgrades</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum security and scam prevention</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum glossary <i
+									class="fa-solid fa-square-question"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum governance</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Blockchain bridges</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum energy consumption</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">What is Web3?</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum Improvment Proposals</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="mt-5">Developers</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Get started</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Documentation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Tutorials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Learn by coding</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Set up local enviroment</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="mt-5">Ecosystem</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Community hub</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum Foundation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0 arrow" href="">Ethereum Foundation Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0 arrow" href="">Ecosystem Support Program</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum bug bounty program</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ecosystem Grant Programs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Ethereum brand assets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0 arrow" href="">Devcon</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="mt-5">Enterprise</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Mainnet Ethereum</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Private Ethereum</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Enterprise</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="mt-5">About ethereum.org</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">About us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Jobs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Contributing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Language support</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Privacy policy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Terms of use</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0" href="">Cookie policy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-0 arrow" href="">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="assets/js/bootstrap.bundle.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
