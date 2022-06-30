@@ -16,46 +16,81 @@ nav {
 			transform: scale(1.2);
 		}
 	}
-	.offcanvas-start {
-		@include media-breakpoint-up(lg) {
-			width: auto;
+	ul {
+		.nav-link {
+			color: $black !important;
+			align-items: center;
+			padding: 0.25rem 0.75rem !important;
+			@include media-breakpoint-up(lg) {
+				display: flex !important;
+			}
+			&:hover {
+				color: $primary !important;
+			}
 		}
-		ul {
-			.nav-link {
-				color: $black !important;
-				align-items: center;
-				padding: 0.25rem 0.75rem !important;
-				@include media-breakpoint-up(lg) {
-					display: flex !important;
-				}
-				&:hover {
-					color: $primary !important;
+		.dropdown-toggle {
+			&:after {
+				background-image: $dropdown-button-icon;
+				width: $dropdown-icon-width;
+				height: $dropdown-icon-height;
+				border: none;
+				margin-left: 0;
+			}
+			&:hover {
+				&:after {
+					background-image: $dropdown-button-hover;
 				}
 			}
-			.dropdown-toggle {
-				&:after {
-					background-image: $dropdown-button-icon;
-					width: $dropdown-icon-width;
-					height: $dropdown-icon-height;
-					border: none;
-					margin-left: 0;
+		}
+		.dropdown-toggle.show {
+			&:after {
+				transform: rotate(180deg);
+			}
+		}
+		.dropdown-item {
+			&:hover {
+				color: $primary !important;
+			}
+		}
+	}
+	// === Mobile Navbar === //
+	.offcanvas-start {
+		.mobile-nav {
+			overflow: scroll;
+			.mobile-nav-links {
+				padding: 3.5rem 0.5rem 8rem;
+				p {
+					margin: 0.5rem 0.5rem;
 				}
-				&:hover {
-					&:after {
-						background-image: $dropdown-button-hover;
+				ul {
+					margin-bottom: 2.5rem;
+					.dropdown-item {
+						color: $gray-400;
+						&:hover {
+							background-color: unset;
+						}
 					}
 				}
 			}
-			.dropdown-toggle.show {
-				&:after {
-					transform: rotate(180deg);
-				}
+		}
+		.bottom-nav-group {
+			position: fixed;
+			bottom: 0;
+			height: 108px;
+			border-top: 1px solid $gray-400;
+			width: 100%;
+			max-width: 450px;
+			flex: 1 1 120px;
+			z-index: 1049;
+			background-color: $white;
+			.bottom-nav-button {
+				width: 33%;
 			}
-			.dropdown-item {
-				&:hover {
-					color: $primary !important;
-				}
-			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			// default 400px (breaks navbar)
+			width: auto;
 		}
 	}
 	.mobile-nav-group,
@@ -123,5 +158,10 @@ nav {
 			width: 1.5rem !important;
 			height: 1.5rem !important;
 		}
+	}
+}
+.mobile-nav {
+	@include media-breakpoint-up(lg) {
+		display: none;
 	}
 }

@@ -14,27 +14,29 @@
 	<!-- Navigation -->
 	<nav class="container-xxl navbar navbar-expand-lg fixed-top navbar-light bg-light px-3 py-3">
 		<div class="container-fluid">
-			<a class="navbar-brand py-0 px-1" href="#">
-				<svg alt="Ethereum logo" class="Nav__HomeLogo-sc-1aprtmp-10 bxCcTx" width="115" height="182"
-					viewBox="0 0 115 182" fill="none">
-					<path d="M57.5054 181V135.84L1.64064 103.171L57.5054 181Z" fill="#F0CDC2" stroke="#1616B4"
-						stroke-linejoin="round">
-					</path>
-					<path d="M57.6906 181V135.84L113.555 103.171L57.6906 181Z" fill="#C9B3F5" stroke="#1616B4"
-						stroke-linejoin="round">
-					</path>
-					<path d="M57.5055 124.615V66.9786L1 92.2811L57.5055 124.615Z" fill="#88AAF1" stroke="#1616B4"
-						stroke-linejoin="round"></path>
-					<path d="M57.6903 124.615V66.9786L114.196 92.2811L57.6903 124.615Z" fill="#C9B3F5" stroke="#1616B4"
-						stroke-linejoin="round"></path>
-					<path d="M1.00006 92.2811L57.5054 1V66.9786L1.00006 92.2811Z" fill="#F0CDC2" stroke="#1616B4"
-						stroke-linejoin="round"></path>
-					<path d="M114.196 92.2811L57.6906 1V66.9786L114.196 92.2811Z" fill="#B8FAF6" stroke="#1616B4"
-						stroke-linejoin="round"></path>
-				</svg>
-			</a>
-			<div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
-				aria-labelledby="navbarOffcanvasLgLabel">
+			<!-- ===== Begin Navgation Content ===== -->
+			<!-- group 1 -->
+			<div class="nav-group">
+				<a class="navbar-brand py-0 px-1" href="#">
+					<svg alt="Ethereum logo" class="Nav__HomeLogo-sc-1aprtmp-10 bxCcTx" width="115" height="182"
+						viewBox="0 0 115 182" fill="none">
+						<path d="M57.5054 181V135.84L1.64064 103.171L57.5054 181Z" fill="#F0CDC2" stroke="#1616B4"
+							stroke-linejoin="round">
+						</path>
+						<path d="M57.6906 181V135.84L113.555 103.171L57.6906 181Z" fill="#C9B3F5" stroke="#1616B4"
+							stroke-linejoin="round">
+						</path>
+						<path d="M57.5055 124.615V66.9786L1 92.2811L57.5055 124.615Z" fill="#88AAF1" stroke="#1616B4"
+							stroke-linejoin="round"></path>
+						<path d="M57.6903 124.615V66.9786L114.196 92.2811L57.6903 124.615Z" fill="#C9B3F5"
+							stroke="#1616B4" stroke-linejoin="round"></path>
+						<path d="M1.00006 92.2811L57.5054 1V66.9786L1.00006 92.2811Z" fill="#F0CDC2" stroke="#1616B4"
+							stroke-linejoin="round"></path>
+						<path d="M114.196 92.2811L57.6906 1V66.9786L114.196 92.2811Z" fill="#B8FAF6" stroke="#1616B4"
+							stroke-linejoin="round"></path>
+					</svg>
+				</a>
+				<!-- Large Navigation Links -->
 				<ul class="navbar-nav">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle px-2 d-none" data-bs-toggle="dropdown" href="#" role="button"
@@ -83,7 +85,7 @@
 							<li><a class="dropdown-item p-2" href="#">Documentation</a></li>
 							<li><a class="dropdown-item p-2" href="#">Tutorials</a></li>
 							<li><a class="dropdown-item p-2" href="#">Learn by coding</a></li>
-							<li><a class="dropdown-item p-2" href="#">Set up local enviroment</a></li>
+							<li><a class="dropdown-item p-2" href="#">Set up local environment</a></li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -110,28 +112,86 @@
 					</li>
 				</ul>
 			</div>
-			<div class="d-none justify-content-end nav-group">
-				<form class="px-2" action="">
-					<input type="search" placeholder="Search" class="form-control" aria-label="Sizing example input"
-						aria-describedby="inputGroup-sizing-default">
-					<p>/</p>
-					<i class="fa-regular fa-magnifying-glass"></i>
-				</form>
-				<button class="btn"><i class="fa-solid fa-moon"></i></button>
-				<a class="d-flex align-items-center" href="#">
-					<i class="fa-light fa-globe"></i>
-					Languages</a>
+			<!-- Begin Mobile Navigation -->
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
+				aria-labelledby="navbarOffcanvasLgLabel">
+				<div class="mobile-nav">
+					<!-- Mobile Navigation Links-->
+					<div class="mobile-nav-links">
+						<p>Use Ethereum</p>
+						<ul class="navbar-nav">
+							<li><a class="dropdown-item p-2" href="#">Ethereum wallets</a></li>
+							<li><a class="dropdown-item p-2" href="#">Get ETH</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized applications (dapps)</a></li>
+							<li><a class="dropdown-item p-2" href="#">Layer 2</a></li>
+							<li><a class="dropdown-item p-2" href="#">Non-fungible tokens (NFTs)</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized finance (DeFi)</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized autonomous organizations (DAOs)</a>
+							</li>
+							<li><a class="dropdown-item p-2" href="#">Stablecoins</a></li>
+							<li><a class="dropdown-item p-2" href="#">Stake ETH</a></li>
+							<li><a class="dropdown-item p-2" href="#">Run a node</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized social networks</a></li>
+							<li><a class="dropdown-item p-2" href="#">Decentralized identity</a></li>
+						</ul>
+						<p>Learn</p>
+						<ul class="navbar-nav">
+							<li><a class="dropdown-item p-2" href="#">What is Ethereum</a></li>
+							<li><a class="dropdown-item p-2" href="#">What is ether (ETH)?</a></li>
+							<li><a class="dropdown-item p-2" href="#">Smart contracts</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum security and scam prevention</a></li>
+							<li><a class="dropdown-item p-2" href="#">History of Ethereum</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum Whitepaper</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum upgrades</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum glossary</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum governance</a></li>
+							<li><a class="dropdown-item p-2" href="#">Blockchain bridges</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum energy consumption</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum Improvment Proposals</a></li>
+							<li><a class="dropdown-item p-2" href="#">What is Web3?</a></li>
+							<li><a class="dropdown-item p-2" href="#">Community guides and resources</a></li>
+						</ul>
+						<p>Developers</p>
+						<ul class="navbar-nav">
+							<li><a class="dropdown-item p-2" href="#">Developers' home</a></li>
+							<li><a class="dropdown-item p-2" href="#">Documentation</a></li>
+							<li><a class="dropdown-item p-2" href="#">Tutorials</a></li>
+							<li><a class="dropdown-item p-2" href="#">Learn by coding</a></li>
+							<li><a class="dropdown-item p-2" href="#">Set up local environment</a></li>
+						</ul>
+						<p>Enterprise</p>
+						<ul class="navbar-nav">
+							<li><a class="dropdown-item p-2" href="#">Mainnet Ethereum</a></li>
+							<li><a class="dropdown-item p-2" href="#">Private Ethereum</a></li>
+						</ul>
+						<p>Community</p>
+						<ul class="navbar-nav">
+							<li><a class="dropdown-item p-2" href="#">Community Hub</a></li>
+							<li><a class="dropdown-item p-2" href="#">Online communities</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum events</a></li>
+							<li><a class="dropdown-item p-2" href="#">Get involved</a></li>
+							<li><a class="dropdown-item p-2" href="#">Open research</a></li>
+							<li><a class="dropdown-item p-2" href="#">Grants</a></li>
+							<li><a class="dropdown-item p-2" href="#">Ethereum support</a></li>
+							<li><a class="dropdown-item p-2" href="#">Language resources</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Mobile Bottom Buttons-->
+				<div class="bottom-nav-group d-flex justify-content-between">
+					<button class="bottom-nav-button d-flex flex-column align-items-center" type="button"
+						data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvasLg"
+						aria-controls="searchOffcanvasLg">
+						<i class="fa-regular fa-magnifying-glass"></i>
+						<span>Search</span>
+					</button>
+					<button class="bottom-nav-button"><i class="fa-solid fa-moon"></i></button>
+					<a class="bottom-nav-button d-flex align-items-center" href="#">
+						<i class="fa-light fa-globe"></i>
+						Languages</a>
+				</div>
 			</div>
-			<div class="d-flex justify-content-end mobile-nav-group">
-				<button class="btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvasLg"
-					aria-controls="searchOffcanvasLg">
-					<i class="fa-regular fa-magnifying-glass"></i>
-				</button>
-				<button class="navbar-toggler px-1" type="button" data-bs-toggle="offcanvas"
-					data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</div>
+			<!-- Mobile Search -->
 			<div class="offcanvas offcanvas-start" tabindex="-2" id="searchOffcanvasLg"
 				aria-labelledby="searchOffcanvasLgLabel">
 				<div class="d-flex px-3 justify-content-between align-items-center">
@@ -148,6 +208,32 @@
 					</form>
 				</div>
 			</div>
+			<!-- End Mobile Navigation-->
+			<!-- Mobile Navigation Buttons -->
+			<div class="d-flex justify-content-end mobile-nav-group">
+				<button class="btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvasLg"
+					aria-controls="searchOffcanvasLg">
+					<i class="fa-regular fa-magnifying-glass"></i>
+				</button>
+				<button class="navbar-toggler px-1" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<!-- Large Navigation Buttons -->
+			<div class="d-none justify-content-end nav-group">
+				<form class="px-2" action="">
+					<input type="search" placeholder="Search" class="form-control" aria-label="Sizing example input"
+						aria-describedby="inputGroup-sizing-default">
+					<p>/</p>
+					<i class="fa-regular fa-magnifying-glass"></i>
+				</form>
+				<button class="btn"><i class="fa-solid fa-moon"></i></button>
+				<a class="d-flex align-items-center" href="#">
+					<i class="fa-light fa-globe"></i>
+					Languages</a>
+			</div>
+			<!-- End Navigation Content-->
 		</div>
 	</nav>
 	<!-- Header -->
@@ -569,7 +655,7 @@
 							<a class="nav-link px-0" href="">Learn by coding</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-0" href="">Set up local enviroment</a>
+							<a class="nav-link px-0" href="">Set up local environment</a>
 						</li>
 					</ul>
 				</div>
