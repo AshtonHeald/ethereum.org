@@ -10451,8 +10451,16 @@ nav ul .dropdown-toggle.show:after {
 nav ul .dropdown-item:hover {
   color: rgb(28, 28, 255) !important;
 }
+nav .offcanvas-start {
+  border-right: none;
+}
 nav .offcanvas-start .mobile-nav {
   overflow: scroll;
+}
+@media (min-width: 1024px) {
+  nav .offcanvas-start .mobile-nav {
+    display: none;
+  }
 }
 nav .offcanvas-start .mobile-nav .mobile-nav-links {
   padding: 3.5rem 0.5rem 8rem;
@@ -10473,15 +10481,40 @@ nav .offcanvas-start .bottom-nav-group {
   position: fixed;
   bottom: 0;
   height: 108px;
-  border-top: 1px solid rgb(102, 102, 102);
+  border-top: 1px solid rgb(229, 229, 229);
   width: 100%;
   max-width: 450px;
   flex: 1 1 120px;
   z-index: 1049;
   background-color: #fff;
+  padding: 1rem;
 }
 nav .offcanvas-start .bottom-nav-group .bottom-nav-button {
   width: 33%;
+}
+nav .offcanvas-start .bottom-nav-group .bottom-nav-button i {
+  font-size: 1.2rem;
+}
+nav .offcanvas-start .bottom-nav-group .bottom-nav-button span {
+  color: rgb(102, 102, 102);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+}
+nav .offcanvas-start .bottom-nav-group .bottom-nav-button:hover {
+  color: rgb(28, 28, 255);
+}
+nav .offcanvas-start .bottom-nav-group .bottom-nav-button:hover span {
+  color: rgb(28, 28, 255);
+}
+nav .offcanvas-start .bottom-nav-group .bottom-nav-button:hover i.fa-globe {
+  transform: scale(1.2);
+}
+@media (min-width: 1024px) {
+  nav .offcanvas-start .bottom-nav-group {
+    display: none !important;
+  }
 }
 @media (min-width: 1024px) {
   nav .offcanvas-start {
@@ -10493,6 +10526,9 @@ nav .offcanvas-start .bottom-nav-group .bottom-nav-button {
 nav #searchOffcanvasLg {
     display: none !important;
   }
+}
+nav #searchOffcanvasLg {
+  z-index: 1047;
 }
 nav #searchOffcanvasLg button {
   font-size: 1.5rem;
@@ -10545,12 +10581,6 @@ nav .nav-group a:hover i {
 nav button .navbar-toggler-icon {
   width: 1.5rem !important;
   height: 1.5rem !important;
-}
-
-@media (min-width: 1024px) {
-  .mobile-nav {
-    display: none;
-  }
 }
 
 #welcome img {
