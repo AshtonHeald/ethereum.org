@@ -92,8 +92,12 @@ $dropdown-button-hover: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 	}
 }
 .form-control {
-	padding: 0.5rem 2rem;
+	padding: .5rem;
+	padding-right: 2rem;
 	color: $gray-300;
+	@include media-breakpoint-up(lg) {
+		padding: .5rem 2rem;
+	}
 }
 .offcanvas-backdrop {
 	opacity: 1 !important;

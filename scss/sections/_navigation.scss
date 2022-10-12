@@ -122,6 +122,39 @@ nav {
 	}
 	.mobile-nav-group,
 	#searchOffcanvasLg {
+		.search-title {
+			margin: 2.5rem 0 2rem;
+		}
+		form {
+			display: flex;
+			position: relative;
+			.form-control {
+			}
+			i {
+				position: absolute;
+				right: 12px;
+				margin-top: 9px;
+				color: rgb(178, 178, 178);
+			}
+		}
+		.search-img {
+			color: $black;
+			background: $gray-200;
+			align-items: center;
+			justify-content: center;
+			margin-top: 10vw;
+			align-self: center;
+			width: min(60vw, 280px);
+			height: min(60vw, 280px);
+			border-radius: 100%;
+			flex-direction: column;
+			display: flex;
+			img {
+				width: 3em !important;
+				height: 3em !important;
+				margin: 0 !important;
+			  }
+		}
 		@include media-breakpoint-up(lg) {
 			display: none !important;
 		}
@@ -188,3 +221,14 @@ nav {
 		}
 	}
 }
+.navbar-toggler {
+	width: 42px;
+	&:focus {
+		box-shadow: 0 0 0 0.25rem rgba(28, 28, 255, 0.25);
+	}
+}
+/* working on changing button
+.offcanvas.show > .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 40' class='css-1xalntp ejzo28p15'%3E%3Cpath d='M 2 13 l 10 0 l 0 0 l 10 0 M 4 19 l 8 0 M 12 19 l 8 0 M 2 25 l 10 0 l 0 0 l 10 0'%3E%3C/path%3E%3C/svg%3E");
+}
+*/
